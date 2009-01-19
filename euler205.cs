@@ -1,4 +1,4 @@
-﻿using System;
+﻿-+using System;
 using System.Collections.Generic;
 using C = System.Console;
 using M = System.Math;
@@ -59,7 +59,7 @@ namespace euler
         {
             DateTime begin = DateTime.Now;
             euler205 e = new euler205();
-            double result = 0;
+            float result = 0;
             double pl1 = 0,pl2 = 0;
             e.FirstSum(1);
             e.SecondSum(1);
@@ -69,8 +69,8 @@ namespace euler
                {
                    if(t > j)
                    {
-                       pl1 = (double)e.pyramidicalsum.Where(x=>x==t).Count()/(double)e.pyramidicalsum.Count;
-                       pl2 = (double)e.cubicsum.Where(x=>x==j).Count()/(double)e.cubicsum.Count;
+                       pl1 = (float)e.pyramidicalsum.Where(x=>x==t).Count()/(float)e.pyramidicalsum.Count;
+                       pl2 = (float)e.cubicsum.Where(x=>x==j).Count()/(float)e.cubicsum.Count;
                        result += pl1 * pl2;
 
                    }
